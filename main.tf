@@ -58,6 +58,8 @@ resource "aws_ecs_service" "ecs_service" {
     container_port   = "${var.main_container_port}"
   }
 
+  enable_execute_command = "${var.enable_execute_command}"
+
   deployment_controller {
     type = "CODE_DEPLOY"
   }

@@ -130,3 +130,9 @@ variable "launch_type" {
   type        = "string"
   default     = "FARGATE"
 }
+
+variable "enable_execute_command" {
+  type    = "string"
+  default = false
+}
+
